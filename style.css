@@ -1,0 +1,244 @@
+body{
+    background-color: #DEBA9D;
+}
+.text
+{
+    font-size :50px;
+    font-family: sans-serif;
+    position:absolute;
+    top:50%;
+    left:25%;
+    transform:translate(-50%,-50%);
+
+}
+span
+{
+  display: inline-block;
+  font-weight: bolder;
+  animation: mover 6s linear infinite;
+}
+@keyframes mover
+{
+    0%{
+        text-shadow: 0 0 30px; rgba ( 0,0,0,0);
+    }
+    50%{
+        text-shadow: 0 0 30px; rgba (0,0,0,0.30);
+        transform : translateY(30px);
+    }
+    100%{
+        text-shadow: 0 0 30px; rgba ( 0,0,0,0) ;
+    }
+}
+.textin
+{
+    font-size : 50px;
+    font-family: sans-serif;
+    position:absolute;
+    top: 25%;
+    left:15%;
+    transform:translate(-50%,-50%);
+    line-height: 160px;
+}
+span
+{
+  display: inline-block;
+  font-weight: bolder;
+  animation: mover 6s linear infinite;
+}
+@keyframes mover
+{
+    0%{
+        text-shadow: 0 0 30px; rgba ( 0,0,0,0);
+    }
+    50%{
+        text-shadow: 0 0 30px; rgba ( 0,0,0,0.30);
+        transform : translateY(30px);
+    }
+    100%{
+        text-shadow: 0 0 30px; rgba ( 0,0,0,0) ;
+    }
+}
+.container
+{
+    font-size: 80px;
+    color:#fff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    position:relative;
+    padding-bottom: 20%;
+    
+}
+h1::before,h1::after
+{ content:'';
+  padding:70px;
+  position:absolute;
+  left:5%;
+  top:15%;
+  display:block;
+  transform: translateX(-50%), translateY(-50%)rotate(0);
+  animation:spin 6s alternate infinite ease-in-out;
+} 
+
+h1{font-size: 80px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 600;
+    position:relative;
+    z-index: 1;
+}
+h1::before
+{
+  border-top:15px solid #FFEBD3;
+  border-left:15px solid #FFEBD3;
+  z-index:-1;
+  
+}
+h1::after
+{border-bottom:15px solid #FFEBD3;
+ border-right:15px solid #FFEBD3;;
+ z-index: -1;
+}
+@keyframes spin
+{
+   100%
+   {
+    transform:  rotate(360deg);
+   }
+
+}
+h2
+{ font-size: 80px;
+    color:#fff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-top:13%;
+    margin-left:23%;
+    
+
+}
+h3
+{
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: 70%;
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+img{
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    
+    
+}
+p{
+    font-family:  'Montserrat', sans-serif;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: x-large;
+    line-height: 1.5;
+    word-spacing: 2px;
+    letter-spacing: 1.5px;
+    font-weight: 900;
+    padding-top: 3%;
+
+
+}
+h4{
+    padding-left: 10%;
+    font-size: 200%;
+    background-color: #FF7F3F;
+    font-size: xx-large;
+}
+a{
+    padding-top: -20;
+
+}
+/* new */
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+}
+.Menu-list {
+  font-size: 4.25rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: rotateX(0) rotateY(0);
+}
+
+.Menu-list-item {
+  position: relative;
+  color: transparent;
+  cursor: pointer;
+}
+.Menu-list-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 49%;
+  left: -10%;
+  right: -10%;
+  height: 4px;
+  border-radius: 4px;
+  margin-top: -2px;
+  background: white;
+  transform: scale(0);
+  transition: transform 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
+  z-index: 1;
+}
+
+.Mask {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  color: #DEBA9D;
+  top: 0;
+  height: 49%;
+  transition: all 0.8s cubic-bezier(0.16, 1.08, 0.38, 0.98);
+}
+.Mask span {
+  display: block;
+}
+
+.Mask + .Mask {
+  top: 48.9%;
+  height: 51.1%;
+}
+.Mask + .Mask span {
+  transform: translateY(-49%);
+}
+
+.Menu-list-item:hover .Mask,
+.Menu-list-item:active .Mask {
+  color: #FFF;
+  transform: skewX(12deg) translateX(5px);
+}
+.Menu-list-item:hover .Mask + .Mask,
+.Menu-list-item:active .Mask + .Mask {
+  transform: skewX(12deg) translateX(-5px);
+}
+.Menu-list-item:hover::before,
+.Menu-list-item:active::before {
+  transform: scale(1);
+}
+.Menu{
+  font-family: "Gilroy ExtraBold", system-ui, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-font-kerning: normal;
+  -webkit-text-size-adjust: 100%;
+  background-color: #000000;
+}
+
+/* about us */
+
+
